@@ -97,7 +97,29 @@
 					]
 				},
 				htmlEmbed: {
-					showPreviews: true
+					showPreviews: true,
+					sanitizeHtml: (inputHtml) => {
+						// Strip unsafe elements and attributes, e.g.:
+						// the `<script>` elements and `on*` attributes.
+						const outputHtml = sanitize(inputHtml);
+
+						return {
+							html: outputHtml,
+							// true or false depending on whether the sanitizer stripped anything.
+							hasChanged: true
+						};
+					}
+				},
+				htmlSupport: {
+					allow: [
+						// Enables <div>, <details>, and <summary> elements with all kind of attributes.
+						{
+							name: /.*/,
+							attributes: true,
+							classes: true,
+							styles: true
+						}
+					]
 				},
 
 				language: 'id',
