@@ -36,7 +36,9 @@
     "@ckeditor/ckeditor5-table": "^29.1.0",
     "@ckeditor/ckeditor5-theme-lark": "^29.1.0",
     "@ckeditor/ckeditor5-typing": "^29.1.0",
+    "@ckeditor/ckeditor5-ui": "^29.1.0",
     "@ckeditor/ckeditor5-upload": "^29.1.0",
+    "@ckeditor/ckeditor5-widget": "^29.1.0",
     "@ckeditor/ckeditor5-word-count": "^29.1.0",
     "css-loader": "^5.2.7",
     "postcss": "^8.3.6",
@@ -52,7 +54,8 @@
   },
   "dependencies": {
     "@ckeditor/ckeditor5-core": "^29.1.0",
-    "@ckeditor/ckeditor5-ui": "^29.1.0",
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21",
+    "sweetalert": "^2.1.2"
   }
 }
