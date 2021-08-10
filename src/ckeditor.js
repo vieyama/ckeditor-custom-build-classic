@@ -64,12 +64,14 @@ import TextPartLanguage from '@ckeditor/ckeditor5-language/src/textpartlanguage.
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount.js';
-import AudioUpload from './customPlugins/audio'
+import AudioUpload from "./customPlugins/audio";
+import VideoUpload from "./customPlugins/video";
 class Editor extends ClassicEditor {}
 
 // Plugins to include in the build.
 Editor.builtinPlugins = [
 	AudioUpload,
+	VideoUpload,
 	Alignment,
 	Autoformat,
 	AutoImage,
